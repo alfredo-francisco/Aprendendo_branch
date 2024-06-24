@@ -44,3 +44,7 @@ Para criar uma branch, ramificação utilizamos o comando git branch <name file>
 branchs criadas utiliza-se git branch
 
 Para deletar branch utiliza-se a flag -d ou --delete, o codigo fica : git branch -d <name file> 
+
+Para alternar entre as branch utiliza-se o comando git checkout -b <name of branch> para mudar 
+e criar uma branch com o comando git checkout <name of branch> . Deve-se tomar cuidado
+pois ao mudar de branch e não realizar o commit da atual, as mudanças são propagadas para a proxima branch a ser aberta
