@@ -42,3 +42,5 @@ alterações antes do git push final
 
 Para criar uma branch, ramificação utilizamos o comando git branch <name file>, e para verificar as 
 branchs criadas utiliza-se git branch
+
+Para deletar branch utiliza-se a flag -d ou --delete, o codigo fica : git branch -d <name file> 
