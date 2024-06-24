@@ -1,0 +1,41 @@
+testando os comandos de iniciazação de um repositorio no github 
+
+git status: permite saber oque foi alterado ou adicionado nos arquivos
+
+Arquivos em amarelo com o simbolo M significam Modificaded, arquivo modificado
+
+Arquivos em verde com o simbolo U significa Untracked(não monitorado), ou seja arquivos novos que não estão sendo monitorados pelo github
+
+Para adicionar os arquivos no repositorio utilizamos o comando git add <name file>, caso 
+tenha varios arquivos a serem enviados utilizamos o comando git add . (ponto) para adicionar tudo de uma vez só
+
+Para salvar os arquivos modificados ou criados utilizamos o comando git commit <nome do arquivo>, ou para
+comitar varios arquivos de uma vez utilizamos o comando git commit -a 
+O ideal para cada commit é enviar junto uma mensagem explicando oque esta sendo comitado e isso é feito pela flag -m
+ao final o mando fica: git commit <namefile> -m"Enviado o arquivo com a seguinte funcionalidade adicionada..."
+
+Para atualizar o repo, enviar tudo ao github, utilizamos o comando git push.
+
+Para atualizar o arquivo local com o arquivo principal do gitHub utilizamos o comando git pull
+
+Para clonar algum repo utilizamos o comando git clone <endereço url do repo a ser clonado>. (ponto ao final)
+Ocorre quando entramos em algum projeto ja existente. É importante notar que ao final da url devemos colocar o ponto para indicar
+que o clone deve ser colocado no diretorio atual
+
+Para remover/deletar algum arquivo utiliza-se o comando rm: git rm <name file>
+
+O comando git log é utilizado para ver o historico de todos os commits realizados no projeto, esse historico
+é apresentado de forma decrescentes. Para ejetar e voltar a linha de codigo utiliza-se a tecla Q.
+
+Para renomear ou mover uma pasta basta utilizar o comando: git mv <arquivo a ser movido ou renomeado> <local para onde vai ser movido ou novo nome> 
+
+Para voltar um arquivo para seu estado inicial, antes de qualquer alteração, utiliza-se o comando 
+git checkout <name file>. Com esse comando podemos fazer o arquivo voltar ao estado igual ao do repositorio. Não desfaz commits
+
+Para ignorar algum arquivo utilizamos o .gitignore, essa é uma pasta que utilizamos para informar
+que o arquivo não deve ser enviado ao repositorio do git. Normalmente arquivos sensiveis ou que podem ser
+instalados depois estão nessa pasta. Basta criar a pasta .gitignore e adicionar dentro dela o nome do arquivo a ser ignorado
+
+Para resetar uma branch a algum estado passado, Normalmente no estado da branch origin/master, utiliza-se o comando
+git reset --hard <nome do arquivo ao qual queremos retornar o atual>. Esse comando desfaz os commits realizados e quais quer outras 
+alterações antes do git push final
