@@ -40,6 +40,9 @@ Para resetar uma branch a algum estado passado, Normalmente no estado da branch 
 git reset --hard <nome do arquivo ao qual queremos retornar o atual>. Esse comando desfaz os commits realizados e quais quer outras 
 alterações antes do git push final
 
+As branchs são utilizadas para criar ramificações do codigo principal para tartar bugs, ou criar novas funcionalidades
+separadamente de forma que ao final é possivel intergrar tudo ao repo da produção
+
 Para criar uma branch, ramificação utilizamos o comando git branch <name file>, e para verificar as 
 branchs criadas utiliza-se git branch
 
@@ -48,3 +51,4 @@ Para deletar branch utiliza-se a flag -d ou --delete, o codigo fica : git branch
 Para alternar entre as branch utiliza-se o comando git checkout -b <name of branch> para mudar 
 e criar uma branch com o comando git checkout <name of branch> . Deve-se tomar cuidado
 pois ao mudar de branch e não realizar o commit da atual, as mudanças são propagadas para a proxima branch a ser aberta
+
