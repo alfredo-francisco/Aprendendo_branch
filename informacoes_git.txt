@@ -53,3 +53,21 @@ e criar uma branch com o comando git checkout <name of branch> . Deve-se tomar c
 pois ao mudar de branch e não realizar o commit da atual, as mudanças são propagadas para a proxima branch a ser aberta
 
 Para unir branchs utilizamos o comandogit marge <branch name>
+
+O comando git stash é utilizado para resetar uma branch. O arquivo em si não é perdido, ele vai para uma
+especie de lixeira no gitHub e é possivel recupera-lo depois. 
+Para ver quais stash foram feitas utiliza-se o comando git stash list e para recuperar alguma basta utilizar
+git stash apply <number of stash>
+Para visualizar as alterações na stash utiliza-se o comando git stash show -p <number of stash>
+
+Para limpar todas as stash utiliza-se o comando git stash clear, e para remover alguma em especifico 
+git stash frop <number of stash>
+
+Tags podem ser utilizadas como chekpoint de determinados estagios de uma branch, são criadas pelo comando
+git tag -a <name> -m"mensagem"
+Para ver todas as tags basta digitar git tag
+Para entrar em uma tag utiliza-se o comando git checkout <tag name>
+Para ver as mudanças em uma tag utiliza-se git show <tag name>
+
+Para enviar as tags ao repo utiliza-se o comando git push origin <tag name>, ou
+para enviar tudo de uma vez usamos git push origin --tag
