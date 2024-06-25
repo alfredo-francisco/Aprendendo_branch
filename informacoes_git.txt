@@ -52,3 +52,4 @@ Para alternar entre as branch utiliza-se o comando git checkout -b <name of bran
 e criar uma branch com o comando git checkout <name of branch> . Deve-se tomar cuidado
 pois ao mudar de branch e não realizar o commit da atual, as mudanças são propagadas para a proxima branch a ser aberta
 
+Para unir branchs utilizamos o comandogit marge <branch name>
